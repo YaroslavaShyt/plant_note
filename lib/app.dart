@@ -1,23 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_redux/flutter_redux.dart';
-import 'package:plant_note/pages/plants_page.dart';
-import 'package:plant_note/redux/state.dart';
-import 'package:redux/redux.dart';
+import 'package:plant_note/features/authentication/presentation/pages/start_page.dart';
+
 
 
 class MyApp extends StatelessWidget {
-  final Store<AppState> store;
-  const MyApp({super.key, required this.store});
+  const MyApp({super.key,});
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return StoreProvider(
-      store: store,
-      child: const MaterialApp(
+    return MaterialApp(
         title: 'Plant Note',
-        home: PlantListPage(),
-      ),
-    );
+        home: StartPage()//PlantListPage(),
+      );
   }
 }

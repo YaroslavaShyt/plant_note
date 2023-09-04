@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:plant_note/core/app_services.dart';
 import 'form_field_widget.dart';
-import 'image_picker_widget.dart';
 
 class FormFieldsColumn extends StatefulWidget {
   final TextEditingController titleController;

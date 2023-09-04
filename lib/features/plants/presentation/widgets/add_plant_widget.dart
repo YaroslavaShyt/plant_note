@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:plant_note/model/plant_model.dart';
-import '../core/app_services.dart';
-import 'form_fields_column.dart';
+import 'package:plant_note/features/plants/data/model/plant_model.dart';
+import 'package:plant_note/features/authentication/presentation/widgets/form_fields_column.dart';
+import 'package:plant_note/core/app_services.dart';
 
 class AddPlantWidget extends StatelessWidget {
   final void Function(Plant) onSubmit;
