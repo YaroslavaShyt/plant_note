@@ -23,17 +23,17 @@ class Plant{
     required this.quantityToGrow
   });
 
-  factory Plant.fromSQFLiteDataBase(Map<String, dynamic> map) {
+  factory Plant.fromSQFLite(Map<String, dynamic> data) {
     return Plant(
-      id: map['id'],
-      title: map['title'],
-      imageForSelling: map['image_for_selling'],
-      imagePersonal: map['image_personal'],
-      totalMoney: map['total_money'],
-      quantitySold: map['quantity_sold'],
-      quantityPersonal: map['quantity_personal'],
-      quantityToSell: map['quantity_to_sell'],
-      quantityToGrow: map['quantity_to_grow'],
+      id: data['id'],
+      title: data['title'],
+      imageForSelling: data['image_for_selling'],
+      imagePersonal: data['image_personal'],
+      totalMoney: data['total_money'],
+      quantitySold: data['quantity_sold'],
+      quantityPersonal: data['quantity_personal'],
+      quantityToSell: data['quantity_to_sell'],
+      quantityToGrow: data['quantity_to_grow'],
     );
   }
 
